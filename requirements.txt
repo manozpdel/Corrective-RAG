@@ -1,0 +1,40 @@
+
+
+# LangChain ecosystem (keep these in sync, version mismatches cause subtle bugs)
+langchain==0.3.25
+langchain-community==0.3.24
+langchain-core==0.3.60
+langchain-groq==0.3.2
+langchain-huggingface==0.1.2
+langchain-text-splitters==0.3.8
+langsmith==0.3.45
+
+# LangGraph
+langgraph==0.3.25
+
+# Vector store — switched from faiss to Chroma (persists to disk, no rebuild needed)
+langchain-chroma==0.2.2
+chromadb==0.6.3
+
+# Embeddings (runs locally on CPU, no API needed)
+sentence-transformers==3.4.1
+
+# PDF loading
+pypdf==5.4.0
+
+# Web search fallback
+tavily-python==0.5.1
+
+# Environment variables
+python-dotenv==1.1.0
+
+# Groq SDK (pulled in by langchain-groq, pinned for safety)
+groq==0.23.1
+
+# HuggingFace SDKs (needed for embedding model auth + tokenization)
+huggingface-hub==0.30.2
+tokenizers==0.21.1
+transformers==4.51.3
+
+# Streamlit UI
+streamlit>=1.35.0
