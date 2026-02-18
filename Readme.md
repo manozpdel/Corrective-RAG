@@ -1,4 +1,4 @@
-# 🧠 CRAG Assistant
+#  CRAG Assistant
 
 > Corrective RAG over your own PDFs — auto-falls back to web search when local docs aren't enough. Built with LangGraph, Groq, ChromaDB, and Streamlit.
 
