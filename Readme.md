@@ -2,7 +2,6 @@
 
 > Corrective RAG over your own PDFs — auto-falls back to web search when local docs aren't enough. Built with LangGraph, Groq, ChromaDB, and Streamlit.
 
-**GitHub:** [github.com/manozpdel/Corrective-RAG](https://github.com/manozpdel/Corrective-RAG)
 
 A **Corrective RAG (CRAG)** question-answering system built on top of your own PDF documents. It uses a LangGraph pipeline to decide — per query — whether to answer from your local knowledge base, fall back to the web, or blend both. Everything is tracked end-to-end via LangSmith, and served through a clean Streamlit chat interface with persistent conversation history.
 
@@ -18,7 +17,7 @@ This means you get accurate answers even when your documents don't cover the top
 
 ## How the Pipeline Works
 
-![CRAG Graph](graph.png)
+![CRAG Graph](output.png)
 
 The pipeline is a LangGraph state machine with six nodes:
 
@@ -53,7 +52,6 @@ After `eval_each_doc`, the pipeline branches based on how good the local docs ar
 │   └── book3.pdf
 ├── chroma_db/          # Auto-created on first run — vector store lives here
 ├── chat_history.db     # SQLite file — auto-created on first run
-├── .env                # API keys (see setup below)
 └── requirements.txt
 ```
 
